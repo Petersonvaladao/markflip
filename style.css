@@ -105,7 +105,8 @@ Utility classes
 
 @media (max-width: 50em) {
   .even-columns {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
 
   .padding-block-600 {
@@ -187,7 +188,7 @@ Main
 
 .main-img {
   background-color: var(--clr-accent-300);
-  border-radius: 3em;
+  border-radius: 1em;
 }
 
 #contact {
@@ -207,12 +208,9 @@ Main
     width: 10em;
   }
 
-  .primary-heading {
+  .primary-heading, .secondary-heading {
     font-size: var(--fs-700);
-  }
-
-  .secondary-heading {
-    font-size: var(--fs-700);
+    font-weight: var(--fw-semi-bold);
   }
 
   .mobile-img {
@@ -220,9 +218,9 @@ Main
     width: 80%;
   }
 
-.video {
-  order: -1;
-}
+  .ideas, .main-img, .video {
+    order: -1;
+  }
 
   .player {
     width: 90vw;
