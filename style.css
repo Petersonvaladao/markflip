@@ -203,8 +203,16 @@ Main
 }
 
 @media (max-width: 50em) {
+  .logo {
+    width: 10em;
+  }
+
   .primary-heading {
-    font-size: var(--fs-800);
+    font-size: var(--fs-700);
+  }
+
+  .secondary-heading {
+    font-size: var(--fs-700);
   }
 
   .mobile-img {
