@@ -10,45 +10,103 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+
+
   <title>Markflip</title>
+
 </head>
-<div class="wrapper">
+
+<body>
   <header class="header">
-    <span class="logo">[| ]markflip</span>
-    <nav>
-      <ul class="nav-items">
-        <li><a href="">Home</a></li>
-        <li><a href="">Sobre</a></li>
-        <li><a href="">Contacto</a></li>
-        <li><a href="">Clientes</a></li>
-      </ul>
-    </nav>
-    <button class="button">Iniciar sesión</button>
+    <div class="container">
+      <div class="nav-wrapper">
+        <img class="logo" src="img/logo.png" alt="logo">
+        <nav class="navigation">
+          <ul class="nav-list">
+            <li><a href="">Home</a></li>
+            <li><a href="#about">Qué hacemos</a></li>
+            <li><a href="#clients">Clientes</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </nav>
+        <button class="button">Iniciar sesión</button>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section class="even-columns">
+    <section class="padding-block-900">
+      <div class="container">
+        <div class="even-columns">
+          <div>
+            <h1 class="primary-heading">Llevamos tu empresa al proximo nivel</h1>
+            <p class="text" data-width="wide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quia quam veniam animi similique officiis, maiores aspernatur voluptatibus eligendi quidem reiciendis qui officiar.</p>
+            <button class="button">Empezar</button>
+          </div>
+
+          <div class="main-img">
+            <img src="img/ilustration.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="padding-block-900">
+      <div class="container">
+        <div class="even-columns">
+
+          <div>
+            <img src="img/ideas.png" alt="">
+          </div>
+
+          <div class="justify-self-end">
+            <h2 class="secondary-heading">Te ayudamos a dar vida a tus ideas!</h2>
+            <p class="text" data-width="wide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quia quam veniam animi similique officiis, maiores aspernatur voluptatibus eligendi quidem reiciendis qui officiar.</p>
+            <button class="button">Empezar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="clients" class="padding-block-900">
+      <div class="container">
+        <div class="even-columns">
+          <div>
+            <h2 class="secondary-heading">Que dicen nuestros clientes</h2>
+            <p class="text" data-width="wide">Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+            <button class="button">Empezar</button>
+          </div>
+
+          <div class="video">
+            <video controls width="550">
+              <source src="img/VideoDavikJoyas.webm" type="video/webm">
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="padding-block-900">
+      <div>
+        <img class="rocket" src="img/rocket.png" alt="">
+      </div>
 
       <div>
-        <h1 class="title">Llevamos tu empresa al proximo nivel</h1>
-        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quia quam veniam animi similique officiis, maiores aspernatur voluptatibus eligendi quidem reiciendis qui officiar.</p>
+        <h2 class="secondary-heading">Te ayudamos a dar vida a tus ideas!</h2>
+        <p class="text" data-width="wide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quia quam veniam animi similique officiis, maiores aspernatur voluptatibus eligendi quidem reiciendis qui officiar.</p>
         <button class="button">Empezar</button>
       </div>
-
-      <div>
-        <img src="img/ilustration.png" alt="">
-      </div>
-
     </section>
+
   </main>
 
-
-</div>
-
-<body>
-
-
+  <footer>
+    <div class="container">
+      <p>markflip 2022. All rights reserved</p>
+    </div>
+  </footer>
 
 
   <script type="module" src="main.js"></script>
