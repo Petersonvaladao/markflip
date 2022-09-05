@@ -120,12 +120,17 @@ Header & Nav
 
 .header {
   padding-top: var(--size-700);
+  width: 100%;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.90);
+  /* box-shadow: 1px 1px 15px rgba(21, 21, 21, 0.05); */
 }
 
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 1em;
 }
 
 .logo {
@@ -156,28 +161,32 @@ Header & Nav
 }
 
 @media (max-width: 50em) {
-.nav-wrapper {
-  align-items:flex-start;
-}
+  .header {
+    padding-top: var(--size-500);
+    width: 100%;
+  }
 
-.login-btn {
-  display: none;
-}
+  .nav-wrapper {
+    align-items:flex-start;
+  }
 
-#hamitems a {
-  box-sizing: border-box;
-  display: block;
-  width: 100%;
-  border-top: 1px solid #333;
-}
- 
-#hamnav label { 
-  display: flex;
-  justify-content: right; 
-  color: var(--clr-primary-400);
-  font-size: var(--fs-800);
-  line-height: 1;
-}
+  .login-btn {
+    display: none;
+  }
+
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+  }
+  
+  #hamnav label { 
+    display: flex;
+    justify-content: right; 
+    color: var(--clr-primary-400);
+    font-size: var(--fs-800);
+    line-height: 1;
+  }
 
   #hamitems {
     display: none;
@@ -188,11 +197,13 @@ Header & Nav
 }
 
 
-
-
 /* ==============
 Main
 ==================*/
+
+.main-content {
+  padding-top: var(--fs-900);
+}
 
 .primary-heading {
   max-width: 12em;
