@@ -241,6 +241,10 @@ Main
   max-width: 45em;
 }
 
+.fade-in {
+  visibility: hidden;
+}
+
 @media (max-width: 50em) {
   .logo {
     width: 10em;
