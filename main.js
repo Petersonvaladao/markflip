@@ -19,22 +19,6 @@ function myFunction() {
 }
 
 // fade in
-// const observer = new IntersectionObserver(
-//   (entries) => {
-//     Array.from(entries).forEach((entry) => {
-//       if (entry.intersectionRatio >= 1) {
-//         entry.target.classList.add('fade-off');
-//       }
-//     });
-//   },
-//   {
-//     threshold: [0, 0.5, 1]
-//   }
-// );
-
-// Array.from(document.querySelectorAll('.fade-in')).forEach((element) => {
-//   observer.observe(element);
-// });
 
 window.sr = ScrollReveal({ reset: true });
 sr.reveal('.fade-in', { duration: 1000 });
