@@ -20,5 +20,5 @@ function myFunction() {
 
 // fade in
 
-window.sr = ScrollReveal({ reset: true });
-sr.reveal('.fade-in', { duration: 1000 });
+// window.sr = ScrollReveal({ reset: true });
+// sr.reveal('.fade-in', { duration: 1000 });
