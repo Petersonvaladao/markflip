@@ -129,6 +129,10 @@ Utility classes
   text-align: center;
 }
 
+.align-center {
+  text-align: center;
+}
+
 /* .btn-position {
   position: absolute;
   top: 220px;
@@ -270,6 +274,27 @@ Main
   margin: 1em 0;
 }
 
+@media (max-width: 50em) {
+  .logo {
+    width: 10em;
+  }
+
+  .primary-heading, .secondary-heading {
+    font-size: var(--fs-700);
+    font-weight: var(--fw-semi-bold);
+  }
+
+  .mobile-img {
+    margin-inline: auto;
+    width: 80%;
+  }
+}
+
+
+/* ==============
+Somos tu equipo
+==================*/
+
 #equipo h2{
   margin: 0 auto ;
   text-align: center;
@@ -322,6 +347,19 @@ Main
   text-align: center;
 }
 
+@media (max-width: 50em) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+  }
+}
+
+/* ==============
+About
+==================*/
+
+
 #about {
   background-color: var(--clr-accent-100);
   margin: 2em 0;
@@ -364,6 +402,31 @@ Main
   grid-template-rows: 1fr 1fr;
   gap: 0.2em;
 }
+
+@media (max-width: 50em) {
+
+  #about {
+    padding: 2em 0;
+  }
+
+  .about-content img {
+    display: none;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-text-grid {
+    grid-template-columns:  1fr;
+    gap: 1em;
+  }
+}
+
+/* ==============
+Equipo 2
+==================*/
+
 
 .grid-box {
   padding: 1.5em;
@@ -438,6 +501,16 @@ align-items: center;
   cursor: pointer;
   color:var(--clr-accent-100);
 }
+
+@media (max-width: 50em) {
+  .team {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==============
+Clientes
+==================*/
 
 /* carousel */
 .slider {
@@ -575,29 +648,39 @@ align-items: center;
 
 
 @media (max-width: 50em) {
-  .logo {
-    width: 10em;
+
+  .slider {
+    position: relative;
+    max-width: 90vw;
+    padding:  220px 20px;
+    margin-top: 2em;
   }
 
-  .primary-heading, .secondary-heading {
-    font-size: var(--fs-700);
-    font-weight: var(--fw-semi-bold);
+  .slide {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
   }
 
-  .mobile-img {
-    margin-inline: auto;
-    width: 80%;
+  .slide-inner {
+    grid-template-columns: 1fr;
+    align-items: center;
   }
 
-  .ideas, .main-img, .video {
-    order: -1;
+  .slide-content {
+    width: 300px;
   }
 
-  .player {
-    width: 90vw;
+  .slide-title {
+    margin-bottom: 20px;
+    font-size: 24px;
   }
+  
+  .slide-text {
+    margin-bottom: 0;
+  }
+} 
 
-}
 
 /* ==============
 Footer
@@ -630,4 +713,19 @@ Footer
 
 .social-logo:hover {
   color: var(--clr-accent-300);
+}
+
+@media (max-width: 50em) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2em;
+  }
+
+  .copyright {
+    max-width: 15em;
+    margin-top: 3em;
+    margin-inline: auto;
+    text-align: center;
+  }
 }
