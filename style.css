@@ -145,16 +145,14 @@ Utility classes
 } */
 
 
-
-
 /* .fade-in {
   visibility: hidden;
 } */
 
 @media (max-width: 50em) {
   .even-columns {
-    display: flex;
     flex-direction: column;
+    padding: 1em 0;
   }
 
   .padding-block-600 {
@@ -187,6 +185,7 @@ Header & Nav
 
 #hamitems {
   display: flex;
+  align-items: center;
   font-size: var(--fs-nav);
   font-weight: var(--fw-semi-bold);
   gap: clamp(var(--size-400), 5vw, var(--size-700));
@@ -219,7 +218,8 @@ Header & Nav
   }
 
   .login-btn {
-    display: none;
+    margin-top: 1em;
+    padding: 0.5em 1.5em;
   }
 
   #hamitems a {
@@ -232,13 +232,14 @@ Header & Nav
     display: flex;
     justify-content: right; 
     color: var(--clr-primary-400);
-    font-size: var(--fs-800);
+    font-size: var(--fs-700);
     line-height: 1;
   }
 
   #hamitems {
     display: none;
   }
+
   #hamnav input:checked ~ #hamitems {
     display: block;
   }
@@ -260,7 +261,7 @@ Main
 }
 
 .main-img {
-  width: 50em;
+  max-width: 100em;
 }
 
 .secondary-heading {
@@ -285,8 +286,9 @@ Main
   }
 
   .mobile-img {
+    order: -1;
     margin-inline: auto;
-    width: 80%;
+    margin-bottom: 1em;
   }
 }
 
@@ -409,12 +411,13 @@ About
     padding: 2em 0;
   }
 
-  .about-content img {
-    display: none;
-  }
-
   .about-content {
     grid-template-columns: 1fr;
+    margin: 0  auto;
+  }
+
+  .about-content img {
+    display: none;
   }
 
   .about-text-grid {
