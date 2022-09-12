@@ -64,7 +64,7 @@ body {
   font-weight: var(--fw-bold);
   line-height: 1;
   color: var(--clr-neutral-900);
-  background-color: #fff;
+  background-color: transparent;
   border: 1px 1px 1px black;
   border-radius: 100vmax;
   padding: 1em 2em;
@@ -148,6 +148,21 @@ Utility classes
 /* .fade-in {
   visibility: hidden;
 } */
+
+.sticky-whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 60px;
+    right: 30px;
+    color:var(--clr-accent-100);
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 50px;
+    z-index: 100;
+}
+
 
 @media (max-width: 50em) {
   .even-columns {
@@ -307,23 +322,19 @@ Somos tu equipo
 .cards {
   display: flex;
   justify-content: space-around;
-  margin-top: 3em;
+  margin-top: 1em;
   text-align: center;
+  gap: 1em;
 }
 
 .card-inner {
-  max-width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1em;
-  border: 2px solid transparent;
-}
-
-.card-inner:hover {
-  cursor: pointer;
   border: 1px solid gray;
+  border-radius: 10px;
 }
 
 .card-inner h3 {
@@ -336,21 +347,12 @@ Somos tu equipo
   opacity: 50%;
 }
 
-
-.contact-area {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 @media (max-width: 50em) {
   .cards {
     flex-direction: column;
     align-items: center;
     gap: 1em;
-    margin-top: 1.5em;
+    margin-top: 1em;
   }
 }
 
@@ -360,7 +362,6 @@ About
 
 
 #about {
-  background-color: var(--clr-accent-100);
   margin: 2em 0;
 }
 
@@ -369,42 +370,44 @@ About
   align-content: baseline;
 }
 
+.full-width-bg1 {
+  background-color:var(--clr-accent-100);
+}
+
 .about-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.about-text-box {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  color: var(--clr-neutral-100);
+  align-items: center;
 }
 
-.about-text-box h2 {
-  margin: 0 auto;
-  margin-bottom: 1em;
-  color: var(--clr-neutral-900);
+.about-content img {
+  max-width: 40em;
 }
 
-.about-text-box h3 {
-  font-size: var(--fs-500);
-  font-weight:var(--fw-bold);
-  color: var(--clr-accent-300);
+.about-text {
+  max-width: 30em;
 }
 
-.about-text-grid {
-  display: grid;
-  grid-template-columns:  1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0.2em;
+.about-text p {
+  margin: 1em 0 0.5em 0;
 }
 
-.grid-box {
-  padding: 1.5em;
-  background-color: #151515;
+.full-width-bg2 {
+  background-color: var(--clr-accent-300);
+}
+
+.about-content2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.about-content2 img {
+  max-width: 25em;
+}
+
+strong {
+  font-weight: var(--fw-bold);
 }
 
 @media (max-width: 50em) {
@@ -413,47 +416,19 @@ About
     padding: 2em 0;
   }
 
-  .about-content {
-    grid-template-columns: 1fr;
-    margin: 0  auto;
-  }
-
-  .about-content img {
-    display: none;
-  }
-
-  .about-text-grid {
-    grid-template-columns:  1fr;
-    gap: 1em;
-  }
 }
 
 /* ==============
 Equipo 2
 ==================*/
 
-.team {
-  margin-top: 3em;
-}
-
 .team-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10em;
-  text-align: center;
-  background-color: var(--clr-neutral-300);
-  padding: 0.5em;
-  border-radius: 5px;
-	box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.42);
-  transition: all .2s ease-in-out;
-}
-
-.team-card:hover {
-  background-color: var(--clr-accent-100);
-	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
-  transform: translateY(-0.5%);
+  margin-top: 3em;
+  margin-inline: auto;
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
 }
 
 .team-card-inner {
@@ -462,12 +437,13 @@ Equipo 2
   justify-content: center;
   align-items: center;
   padding: 1em;
-  background-color: #fff;
+  border: 1px solid gray;
   border-radius: 5px;
+  background-color: #fff;
 }
 
 .team-card-inner img {
-  padding: 0 40px;
+  padding: 0 5px;
   border-radius: 50%;
 }
 
@@ -479,15 +455,10 @@ Equipo 2
 
 .team-card h4 {
   font-size: 1rem;
-  margin-bottom: 0.5em;
-}
-
-.team-card p {
-  margin-bottom: 1em;
 }
 
 .card-social-media {
-  margin-top: 1em;
+  margin-top: 0.5em;
   font-size: var(--fs-600);
 }
 
@@ -501,23 +472,17 @@ Equipo 2
   color:var(--clr-accent-100);
 }
 
-@media (max-width: 50em) {
+/* @media (max-width: 50em) {
 
-  .team {
-    margin-top: 1.5em;
-  }
 
-  .item {
-    padding: 0 20px;
-  }
-}
+} */
 
 /* ==============
 Clientes
 ==================*/
 
 #clients {
-  margin-bottom: 3em;
+  margin: 4em 0 3em 0;
 }
 
 .slide {
