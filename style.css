@@ -308,40 +308,34 @@ Somos tu equipo
   display: flex;
   justify-content: space-around;
   margin-top: 3em;
-}
-
-.card-container {
-	background-color: #f2f2f2;
-	border-radius: 10px;
-	box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.42);
-	color:var(--clr-neutral-900);
-	padding: 1em;
-	max-width: 19em;
-	text-align: center;
-  transition: all .2s ease-in-out;
-}
-
-.card-container:hover {
-  background-color: var(--clr-accent-100);
-	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
-  transform: translateY(-0.5%);
+  text-align: center;
 }
 
 .card-inner {
+  max-width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1em;
-  border-radius: 10px;
-  background-color:var(--clr-neutral-100);
+  border: 2px solid transparent;
 }
 
-.card-container h3 {
+.card-inner:hover {
+  cursor: pointer;
+  border: 1px solid gray;
+}
+
+.card-inner h3 {
   font-size: var(--fs-600);
   font-weight:var(--fw-bold);
   margin: 1em 0;
 }
+
+.card-inner img {
+  opacity: 50%;
+}
+
 
 .contact-area {
   display: flex;
@@ -355,7 +349,8 @@ Somos tu equipo
   .cards {
     flex-direction: column;
     align-items: center;
-    gap: 1.5em;
+    gap: 1em;
+    margin-top: 1.5em;
   }
 }
 
@@ -449,7 +444,7 @@ Equipo 2
   border-radius: 10em;
   text-align: center;
   background-color: var(--clr-neutral-300);
-  padding: 1em;
+  padding: 0.5em;
   border-radius: 5px;
 	box-shadow: 0px 5px 10px -5px rgba(0,0,0,0.42);
   transition: all .2s ease-in-out;
@@ -461,8 +456,18 @@ Equipo 2
   transform: translateY(-0.5%);
 }
 
-.card-inner img {
-  padding: 0 30px;
+.team-card-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.team-card-inner img {
+  padding: 0 40px;
   border-radius: 50%;
 }
 
@@ -497,6 +502,11 @@ Equipo 2
 }
 
 @media (max-width: 50em) {
+
+  .team {
+    margin-top: 1.5em;
+  }
+
   .item {
     padding: 0 20px;
   }
@@ -506,20 +516,21 @@ Equipo 2
 Clientes
 ==================*/
 
+#clients {
+  margin-bottom: 3em;
+}
+
 .slide {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 5em;
+  margin-top: 1em;
+  max-height: 350px;
 }
 
 .slide-content {
 text-align: center;
-}
-
-.play-btn {
-  margin-top: 0.8em;
-  font-size: 40px;
-  color: #252525;
 }
 
 .slide-title {
@@ -527,9 +538,26 @@ text-align: center;
   font-weight: var(--fw-bold);
 }
 
+.play-btn {
+  margin-top: 0.1em;
+  font-size: 40px;
+  color: var(--clr-accent-100);
+}
+
+.slide-image {
+  max-width: 500px;
+
+}
+
 @media (max-width: 50em) {
+  .clients-carousel {
+    margin-top: 1.5em;
+  }
+  
   .slide {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    justify-content:end;
+    gap: 0;
   }
 
   .slide-image {
