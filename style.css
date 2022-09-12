@@ -619,13 +619,26 @@ Footer
 
 /* MODAL */
 
-.modal-area {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-gap: 1em;
+.calendly-inline-widget {
+  min-width:320px;
+  height:700px;
 }
+
+@media (max-width: 50em) {
+  .calendly-inline-widget {
+    min-width:320px;
+    height:300px;
+  }
+}
+/* style="min-width:320px;height:700px;" */
+
+  .modal-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  }
 
 .modal {
   display: none;
