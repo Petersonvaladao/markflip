@@ -127,7 +127,10 @@
 
     <section id="equipo2" class="padding-block-600 fade-in">
       <div class="container">
-        <h2 class="secondary-heading align-center">Cuenta conosotros!</h2>
+        <div class="modal-area">
+          <h2 class="secondary-heading align-center">Cuenta conosotros!</h2>
+          <button class="login-btn modal-btn">Agendar una reunión ahora</button>
+        </div>
 
         <div class="team team-carousel owl-carousel owl-theme">
 
@@ -138,7 +141,58 @@
                 <h3>Nombre</h3>
                 <h4>actividad</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <button class="login-btn">Contactar</button>
+
+                <div class="card-social-media">
+                  <a href="#"><i class="fa-brands fa-linkedin card-social-logo"></i></a>
+                  <a href="#"><i class="fa-solid fa-envelope card-social-logo"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="item">
+            <div class="team-card">
+              <div class="team-card-inner">
+                <img src=" img/eric.png" alt="">
+                <h3>Nombre</h3>
+                <h4>actividad</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+                <div class="card-social-media">
+                  <a href="#"><i class="fa-brands fa-linkedin card-social-logo"></i></a>
+                  <a href="#"><i class="fa-solid fa-envelope card-social-logo"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="item">
+            <div class="team-card">
+              <div class="team-card-inner">
+                <img src=" img/eric.png" alt="">
+                <h3>Nombre</h3>
+                <h4>actividad</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+                <div class="card-social-media">
+                  <a href="#"><i class="fa-brands fa-linkedin card-social-logo"></i></a>
+                  <a href="#"><i class="fa-solid fa-envelope card-social-logo"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="item">
+            <div class="team-card">
+              <div class="team-card-inner">
+                <img src=" img/eric.png" alt="">
+                <h3>Nombre</h3>
+                <h4>actividad</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
                 <div class="card-social-media">
                   <a href="#"><i class="fa-brands fa-linkedin card-social-logo"></i></a>
                   <a href="#"><i class="fa-solid fa-envelope card-social-logo"></i></a>
@@ -150,11 +204,11 @@
           <div class="item">
             <div class="team-card">
               <div class="team-card-inner">
-                <img src="img/eric.png" alt="">
+                <img src=" img/eric.png" alt="">
                 <h3>Nombre</h3>
                 <h4>actividad</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <button class="login-btn">Contactar</button>
+
                 <div class="card-social-media">
                   <a href="#"><i class="fa-brands fa-linkedin card-social-logo"></i></a>
                   <a href="#"><i class="fa-solid fa-envelope card-social-logo"></i></a>
@@ -163,53 +217,7 @@
             </div>
           </div>
 
-          <div class="item">
-            <div class="team-card">
-              <div class="team-card-inner">
-                <img src="img/eric.png" alt="">
-                <h3>Nombre</h3>
-                <h4>actividad</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <button class="login-btn">Contactar</button>
-                <div class="card-social-media">
-                  <a href="#"><i class="fa-brands fa-linkedin card-social-logo"></i></a>
-                  <a href="#"><i class="fa-solid fa-envelope card-social-logo"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="item">
-            <div class="team-card">
-              <div class="team-card-inner">
-                <img src="img/eric.png" alt="">
-                <h3>Nombre</h3>
-                <h4>actividad</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <button class="login-btn">Contactar</button>
-                <div class="card-social-media">
-                  <a href="#"><i class="fa-brands fa-linkedin card-social-logo"></i></a>
-                  <a href="#"><i class="fa-solid fa-envelope card-social-logo"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="team-card">
-              <div class="team-card-inner">
-                <img src="img/eric.png" alt="">
-                <h3>Nombre</h3>
-                <h4>actividad</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <button class="login-btn">Contactar</button>
-                <div class="card-social-media">
-                  <a href="#"><i class="fa-brands fa-linkedin card-social-logo"></i></a>
-                  <a href="#"><i class="fa-solid fa-envelope card-social-logo"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
 
 
         </div>
@@ -283,6 +291,18 @@
 
     </section>
 
+
+    <!-- MODAL Contact -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+        </div>
+        <div class="calendly-inline-widget" data-url="https://calendly.com/markflip" style="min-width:320px;height:700px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      </div>
+    </div>
+
   </main>
 
   <footer class="footer-section">
@@ -304,12 +324,6 @@
     </div>
   </footer>
 
-
-
-  <!-- Principio del widget integrado de Calendly -->
-  <!-- <div class="calendly-inline-widget" data-url="https://calendly.com/markflip" style="min-width:320px;height:630px;"></div>
-  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script> -->
-  <!-- Final del widget integrado de Calendly -->
 
 
 

@@ -22,3 +22,23 @@ function myFunction() {
 
 // window.sr = ScrollReveal({ reset: true });
 // sr.reveal('.fade-in', { duration: 1000 });
+
+//MODAL
+
+var modal = document.getElementById('myModal');
+var btn = document.querySelector('.modal-btn');
+var span = document.getElementsByClassName('close')[0];
+
+btn.onclick = function () {
+  modal.style.display = 'block';
+};
+
+span.onclick = function () {
+  modal.style.display = 'none';
+};
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+};
