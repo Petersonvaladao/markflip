@@ -314,17 +314,14 @@ Main
 }
 
 
-/* ==============
-Somos tu equipo
-==================*/
-
 #equipo h2{
   margin: 0 auto ;
   text-align: center;
 }
 
 .cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-around;
   margin-top: 1em;
   text-align: center;
@@ -353,7 +350,7 @@ Somos tu equipo
 
 @media (max-width: 50em) {
   .cards {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     align-items: center;
     gap: 1em;
     margin-top: 1em;
